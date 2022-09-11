@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna GYM</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Baloo+Bhai+2:wght@600&family=Roboto:ital@1&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Audiowide', cursive;
+            background:linear-gradient(rgb(37 43 51 / 40%),rgb(37 43 51 / 40%)) ,url("./images-01/bgg.PNG") no-repeat center center /cover;
+            height:100vh;
+            width:100vw;
+            color: white;
+            overflow: hidden;
+        }
+
+        .left {
+            /* agr kisi btn ko right krna h to = absolute position, inline block display, right; */
+            position: absolute;
+            display: inline-block;
+            /* border: 2px solid red; */
+            left: 30px;
+            top: 10px;
+            filter: invert(100%);
+
+        }
+
+        .Mid {
+            /* three conditions = for mid in any button  1. margin 10px auto, 2.block display, 3.width 33% */
+            display: block;
+            width: 44%;
+            top: 10px;
+            margin: 35px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            /* agr kisi btn ko right krna h to = absolute position, inline block display, right; */
+            position: absolute;
+            right: 0px;
+            height: 35px;
+            width: 288px;
+            top: 35px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+            /* display: inline-block; */
+        }
+
+        .navbar li {
+
+            display: inline-block;
+        }
+
+        .navbar li a {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            /* margin: 10px; */
+            padding: 10px 10px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .left img {
+            margin: 9px 46px;
+            width: 62px;
+            webkit-mask-box-image: none;
+            height: 43px;
+            /* iska use black to white krne me orr white ko black krne me aata hh */
+            /* filter: invert(100%); */
+
+        }
+
+        .left div {
+            position: center center;
+            line-height: 5px;
+            width: 140px;
+            text-align: center;
+            font-size: 19px;
+        }
+
+        .btn {
+            border-radius: 6px;
+            font-family: 'Audiowide', cursive;
+            padding: 0px 5px;
+            float: right;
+            margin: 0px 15px;
+            width: 88px;
+            height: 35px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: rgb(202, 196, 196);
+        }
+
+        .contaioner {
+            /* border: 2px solid black; */
+            margin: 179px 123px;
+            height: 400px;
+            padding: 4px 1px;
+            width: 32%;
+            border-radius: 15px;
+        }
+
+        .from input {
+            font-family: 'Audiowide', cursive;
+            text-align: center;
+            margin: 5px 60px;
+            font-size: 17px;
+            padding: 2px 36px;
+            border-radius: 4px;
+
+        }
+
+        .fom {
+            font-family: 'Audiowide', cursive;
+            margin: 0px 62px;
+            padding: 0px 80px;
+            font-size: 37px;
+
+        }
+
+        .contaioner head {
+            text-align: center;
+            margin: 0px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="./images-01/logomstGym.png" alt="">
+            <div>Apna GYM</div>
+        </div>
+        <div class="Mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Servics</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Email Us</button>
+            <button class="btn">Search</button>
+        </div>
+        <div class="contaioner">
+            <h2 class="head">Join the best GYM of Jaipur now</h2>
+            <form action="no action.php">
+                <div class="from">
+                    <input type="text" name="" placeholder="Enter Your Name">
+                </div>
+                <div class="from">
+                    <input type="text" name="" placeholder="Enter Your Age">
+                </div>
+                <div class="from">
+                    <input type="text" name="" placeholder="Enter Your Gender">
+                </div>
+                <div class="from">
+                    <input type="text" name="" placeholder="Enter Your Locality">
+                </div>
+                <div class="from">
+                    <input type="text" name="" placeholder="Enter Your Mobile Number">
+                </div>
+                <div class="from">
+                    <input type="text" name="" placeholder="Enter Your Email id">
+                </div>
+                <div class="fom">
+                    <button type="submit">Sumit Now</button>
+                    <button type="reset">Reset </button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+</body>
+
+</html>
